@@ -28,7 +28,7 @@ const Give = () => {
               </div>
               <div className=" flex items-center justify-center gap-5 mt-2 ">
                 <LuPhoneCall className="h-4 w-4" />
-                <p className='text-xl'>240-264-9953</p>
+                <p className="text-xl">240-264-9953</p>
               </div>
             </div>
           </div>
@@ -47,18 +47,20 @@ const Give = () => {
               <h3 className="text-4xl font-extrabold mt-2">240 264 9953</h3>
             </div>
             <div className="bg-white mt-10  py-5 px-8 rounded-3xl shadow-2xl">
-              <h2 className="text-3xl font-bold">Give by Check</h2>
+              <h2 className="text-3xl font-bold text-red-700">Give by Check</h2>
               <p className="text-gray-500 mt-3">
                 You can set up a bank check payment through your online banking
                 system or send a personal check to our church at the address
                 below.
               </p>
-              <p className="text-gray-500 mt-5">
-                Please make check payable to{" "}
-              </p>
-              <h3 className="text-2xl font-bold mt-2">
+              <p className="mt-5 text-blue-700">Please make check payable to</p>
+              <h3 className="text-2xl font-bold text-red-500 mt-2 mb-4">
                 PCG Washington DC North District
               </h3>
+              <small className="bg-red-100 px-4 py-2  rounded-full border-red-800 border-2 text-red-800 ">
+                Check Details
+              </small>
+             
               <p className="text-gray-500 mt-3">
                 The District Treasurer <br />
                 Presbyterian Church of Ghana

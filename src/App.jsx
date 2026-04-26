@@ -10,6 +10,7 @@ import Contacts from './routes/Contacts'
 import Congregations from './routes/Congregations'
 import NotFound from './routes/NotFound'
 import Give from './routes/Give'
+import Events from './routes/Events'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Route path='/contactus' element={<Contacts/>}/>
       <Route path='/congregation' element={<Congregations/>}/>
       <Route path='/give' element={<Give/>}/>
+      <Route path='/events' element={<Events/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>
     <Footer/>

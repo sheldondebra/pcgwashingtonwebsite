@@ -3,13 +3,13 @@ import { FaGooglePlay } from "react-icons/fa";
 
 const MobileAppAd = () => {
   return (
-    <div className="bg-blue-800 px-10 py-22 text-center text-white ">
+    <div className="bg-red-800 px-10 py-22 text-center text-white ">
       <div className="w-full text-center bg-neutral-primary-soft p-6  rounded-base shadow-xs container mx-auto flex flex-col items-center">
         <h5 className="mb-3 text-3xl  tracking-tight font-semibold text-heading">
           Stay Connected While You Travel Abroad
         </h5>
 
-        <p className="mb-6 text-base text-center wrap-anywhere sm:text-lg max-w-3xl place-item-center ">
+        <p className="mb-6 text-sm text-center wrap-anywhere sm:text-lg max-w-3xl place-item-center ">
           Stay connected wherever you travel with the Presby Connect App. Join
           the Presbyterian Church of Ghana’s overseas community, find local PCG
           churches abroad, and stay supported in your faith.
@@ -21,7 +21,7 @@ const MobileAppAd = () => {
           {/* Apple */}
           <a
             href="#"
-            className="w-full sm:w-auto bg-dark hover:bg-dark-strong focus:ring-4 focus:outline-none focus:ring-neutral-quaternary text-white rounded-base inline-flex items-center justify-center px-4 py-3"
+            className="w-full border rounded-full  sm:w-auto bg-dark hover:bg-dark-strong focus:ring-4 focus:outline-none focus:ring-neutral-quaternary text-white rounded-base inline-flex items-center justify-center px-4 py-3"
           >
             <svg
               className="me-2 w-7 h-7"
@@ -46,7 +46,7 @@ const MobileAppAd = () => {
           {/* Google Play */}
           <a
             href="#"
-            className="w-full sm:w-auto bg-dark hover:bg-dark-strong focus:ring-4 focus:outline-none focus:ring-neutral-quaternary text-white rounded-base inline-flex items-center justify-center px-4 py-3"
+            className="w-full sm:w-auto bg-dark  border rounded-full   hover:bg-dark-strong focus:ring-4 focus:outline-none focus:ring-neutral-quaternary text-white rounded-base inline-flex items-center justify-center px-4 py-3"
           >
             <svg
               className="me-2 w-7 h-7"

@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
-import { MdOutlineAttachMoney } from 'react-icons/md';
-import { Link } from 'react-router'
+import React, { useState } from "react";
+import { MdOutlineAttachMoney } from "react-icons/md";
+import { Link } from "react-router";
 import { HiOutlineBars4 } from "react-icons/hi2";
 
-
 const Navbar = () => {
-
-  const [mobMenu, setMobMenu] = useState(false)
-
+  const [mobMenu, setMobMenu] = useState(false);
 
   return (
     <div className="bg-white shadow py-1 top-0  w-full z-50 flex items-center">
@@ -19,20 +16,13 @@ const Navbar = () => {
           <Link to="/" onClick={() => setMobMenu(false)}>
             Home
           </Link>
-          <Link
-            to="/aboutus"
-            onClick={() => {
-              setTimeout(() => setMobMenu(false), 100);
-            }}
-          >
-            About
-          </Link>
+          <Link to="/aboutus">About</Link>
           <Link to="/committees">Committees</Link>
           <Link>Groups</Link>
           <Link to="/leadership">Leadership</Link>
-          <Link to="/congregation">Congregation</Link>
-          <Link>Gallery</Link>
-          <Link>Events</Link>
+          <Link to="/congregation">Congregations</Link>
+
+          <Link to='/events'>Events</Link>
           <Link to="/contactus">Contact Us</Link>
         </div>
         <Link to="/give">
@@ -57,17 +47,15 @@ const Navbar = () => {
               <Link to="/">Home</Link>
               <Link
                 to="/aboutus"
-                onClick={() => {
-                  setTimeout(() => setMobMenu(false), 100);
-                }}
+                
               >
                 About
               </Link>
               <Link>Committees</Link>
               <Link>Groups</Link>
               <Link>Leadership</Link>
-              <Link>Congregation</Link>
-              <Link>Gallery</Link>
+              <Link>Congregations</Link>
+              
               <Link>Events</Link>
               <Link>Contact Us</Link>
             </div>
@@ -86,6 +74,6 @@ const Navbar = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

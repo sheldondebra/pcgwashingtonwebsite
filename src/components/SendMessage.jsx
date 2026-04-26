@@ -34,11 +34,11 @@ const SendMessage = ({title, btnLabel}) => {
             placeholder="Enter your Message"
           ></textarea>
         </div>
-        <p className="text-gray-500 mt-5 text-sm">
+        <p className="text-gray-500 mt-7 text-sm">
           By submitting this form, you agree to share your information with us
           so we can respond to your inquiry promptly and appropriately.
         </p>
-        <button className="mt-6 bg-red-700 text-white px-5 py-2 rounded-4xl flex items-center gap-3">
+        <button className="mt-6 bg-red-700 text-white px-5 py-2 rounded-4xl flex items-center gap-3 hover:bg-red-500 transition-colors duration-200">
           <BsFillSendFill />
           {btnLabel}
         </button>
