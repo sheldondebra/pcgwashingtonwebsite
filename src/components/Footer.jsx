@@ -25,8 +25,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-white">
-          <h1 className="text-sm font-bold mb-6 ">Quick Links</h1>
-          <div className="flex flex-col gap-3 ">
+          <h1 className="font-bold mb-6 ">Quick Links</h1>
+          <div className="flex flex-col gap-3 text-sm  ">
             <Link to="/">Home</Link>
             <Link to="/aboutus">About us</Link>
             <Link to="/committees">Committees</Link>
@@ -36,8 +36,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-white">
-          <h1 className="text-sm font-bold mb-6 ">Congregations</h1>
-          <div className="flex flex-col gap-3 ">
+          <h1 className="font-bold mb-6 ">Congregations</h1>
+          <div className="flex flex-col gap-3 text-sm ">
             <Link to="/">Adom Congregation</Link>
             <Link to="/">Capital DC Preaching Point</Link>
             <Link to="/">Convenant Congregation</Link>
@@ -51,7 +51,7 @@ const Footer = () => {
           <h1 className="text-xl font-bold mb-6 ">
             Subscribe to our Newsletter
           </h1>
-          <p className='text-sm'>
+          <p className="text-sm">
             Subscribe to receive updates, devotionals, and important
             announcements from the Presbyterian Church of Ghana.
           </p>

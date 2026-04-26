@@ -93,7 +93,7 @@ const Congregations = () => {
                 {/* Actions */}
                 <div className="flex items-center justify-between">
                   {item.website ? (
-                    <Button size="sm" className="w-full">
+                    <Button size="sm" className="w-full bg-red-800">
                       Visit Website
                     </Button>
                   ) : (

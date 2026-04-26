@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Contacts from './routes/Contacts'
 import Congregations from './routes/Congregations'
 import NotFound from './routes/NotFound'
+import Give from './routes/Give'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Route path='/leadership' element={<Leadership/>}/>
       <Route path='/contactus' element={<Contacts/>}/>
       <Route path='/congregation' element={<Congregations/>}/>
+      <Route path='/give' element={<Give/>}/>
       <Route path='*' element={<NotFound/>}/>
     </Routes>
     <Footer/>
