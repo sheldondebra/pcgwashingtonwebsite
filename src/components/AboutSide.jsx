@@ -1,10 +1,14 @@
 import React from 'react'
+import { Link } from 'react-router';
 
 const AboutSide = () => {
   return (
     <div className="md:flex items-center">
       <div>
-        <img src="./assets/aboutside.jpg" className="md:h-180  h-70   md:w-820" />
+        <img
+          src="./assets/aboutside.jpg"
+          className="md:h-180  h-70   md:w-820"
+        />
       </div>
       <div className="container mx-auto p-10  md:p-20">
         <h1 className="text-3xl mb-6 font-bold">About Us</h1>
@@ -23,7 +27,11 @@ const AboutSide = () => {
           strive to make a lasting impact both locally and globally as one body
           in Christ.
         </p>
-        <button className='bg-red-700 mt-5 px-6 py-2 rounded-3xl text-white'>About Us</button>
+        <Link to="/aboutus">
+          <button className="bg-red-700 mt-5 px-6 py-2 rounded-3xl text-white">
+            About Us
+          </button>
+        </Link>
       </div>
     </div>
   );

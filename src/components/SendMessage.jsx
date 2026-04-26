@@ -4,7 +4,7 @@ import { BsFillSendFill } from "react-icons/bs";
 const SendMessage = ({title, btnLabel}) => {
   return (
     <div>
-      <div className="bg-white rounded-2xl shadow px-10 py-14 ">
+      <div className="bg-white rounded-2xl shadow px-10 py-14 w-full ">
         <h1 className="text-3xl font-light capitalize mb-4">{title}</h1>
         <div className="">
           <input

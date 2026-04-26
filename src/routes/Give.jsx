@@ -15,8 +15,8 @@ const Give = () => {
         </p>
       </section>
       <div className="bg-gray-200 py-20 px=10">
-        <section className="flex container mx-auto gap-10 ">
-          <div className="w-1/2">
+        <section className="md:flex container mx-auto gap-10 ">
+          <div className="md:w-1/2 px-5">
             <SendMessage
               title="Contact us to donate?"
               btnLabel="I want to support"
@@ -32,7 +32,7 @@ const Give = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/2">
+          <div className="md:w-1/2 mt-6 p-4">
             <h2 className="text-3xl font-bold">Give Online</h2>
             <p className="text-xl text-gray-600 mt-4">
               God bless you abundantly for your generosity

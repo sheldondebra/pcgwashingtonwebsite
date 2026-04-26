@@ -17,8 +17,8 @@ const Contacts = () => {
         </p>
       </section>
       <section className="bg-gray-200 ">
-        <div className="container mx-auto flex justify-center px-10 py-12">
-          <div className="w-1/2 p-6">
+        <div className="container mx-auto md:flex justify-center px-10 py-12">
+          <div className="md:w-1/2 p-6">
             <h1 className="text-3xl font-bold mb-4">Get in Touch</h1>
             <p className="text-gray-500">
               We’d love to hear from you. Whether you have a question, need
@@ -51,7 +51,7 @@ const Contacts = () => {
               </div>
             </div>
           </div>
-          <div className="w-1/2 p-6">
+          <div className="md:w-1/2 p-2">
             <SendMessage title='Send us a Message' btnLabel='Send Message'/>
           </div>
         </div>

@@ -92,13 +92,13 @@ const Committees = () => {
   return (
     <div>
       <section className=" text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 items-center flex flex-col justify-center  ">
-        <h1 className="text-white text-4xl font-bold">Committees</h1>
+        <h1 className="text-white text-4xl font-bold">District Committees</h1>
         <p className="text-gray-300 text-sm leading-5 mt-3">
           PCG - Washington DC - North District
         </p>
       </section>
 
-      <section className='container mx-auto py-10'>
+      <section className="container mx-auto py-10">
         <div className="p-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {committees.map((committee, index) => (
             <div
@@ -106,7 +106,9 @@ const Committees = () => {
               className="bg-white shadow-md rounded-2xl p-6 border"
             >
               {/* Title */}
-              <h2 className="text-lg font-bold mb-2 bg-blue-100 rounded-full py-2 px-1 text-blue-900 ">{committee.title}</h2>
+              <h2 className="text-sm pl-5 font-semibold mb-2 bg-blue-100 rounded-full py-2 px-1 text-blue-900 ">
+                {committee.title}
+              </h2>
 
               {/* Chairperson */}
               <p className="text-sm font-semibold text-gray-600 mb-4">
@@ -115,9 +117,17 @@ const Committees = () => {
               </p>
 
               {/* Functions */}
-              <ul className="list-disc pl-5 space-y-2 text-sm">
+              <ul className="list-disc pl-5 space-y-1 text-sm">
+                <h1 className="bg-red-100 w-max px-6 py-1 rounded-full border border-red-900 text-red-800 mb-4">
+                  Functions
+                </h1>
                 {committee.functions.map((func, i) => (
-                  <li key={i} className='hover:bg-red-50'>{func}</li>
+                  <li
+                    key={i}
+                    className="hover:bg-blue-50 text-gray-500 w-max py-1 rounded-2xl  px-2"
+                  >
+                    {func}
+                  </li>
                 ))}
               </ul>
             </div>

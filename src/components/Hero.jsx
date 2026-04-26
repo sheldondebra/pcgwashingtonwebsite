@@ -8,6 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../components/ui/carousel";
+import { Link } from "react-router";
 
 const Hero = () => {
   const plugin = React.useRef(
@@ -21,6 +22,7 @@ const Hero = () => {
         "The Presbyterian Church of Ghana – Washington DC North District brings together congregations committed to worship, spiritual growth, and community impact.",
       cta: "Explore Our District",
       image: "/assets/pcggallery.jpg",
+      link: "/aboutus",
     },
     {
       title: "One District. Many Congregations. One Mission.",
@@ -28,6 +30,7 @@ const Hero = () => {
         "We connect and empower churches across the district to serve, lead, and make a difference through Christ-centered ministry.",
       cta: "Find a Congregation",
       image: "/assets/pcgtrinity.jpg",
+      link: "/contactus",
     },
   ];
 
@@ -60,10 +63,11 @@ const Hero = () => {
                       <p className="text-lg md:text-xl mb-6 text-gray-200 leading-7  not-first:mt-6">
                         {slides.description}
                       </p>
-
-                      <button className="bg-red-800 hover:bg-red-500 text-white px-6 py-3 rounded-lg font-semibold transition">
-                        {slides.cta}
-                      </button>
+                      <Link to={slides.link}>
+                        <button className="bg-red-800 hover:bg-red-500 text-white px-6 py-3 rounded-lg font-semibold transition">
+                          {slides.cta}
+                        </button>
+                      </Link>
                     </div>
                   </CardContent>
                 </Card>
