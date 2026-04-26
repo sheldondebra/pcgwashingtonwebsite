@@ -27,13 +27,13 @@ const Navbar = () => {
           >
             About
           </Link>
-          <Link to='/committees'>Committees</Link>
+          <Link to="/committees">Committees</Link>
           <Link>Groups</Link>
-          <Link to='/leadership'>Leadership</Link>
-          <Link>Congregation</Link>
+          <Link to="/leadership">Leadership</Link>
+          <Link to='/congregation'>Congregation</Link>
           <Link>Gallery</Link>
-          <Link >Events</Link>
-          <Link >Contact Us</Link>
+          <Link>Events</Link>
+          <Link to="/contactus">Contact Us</Link>
         </div>
         <button className="md:flex items-center bg-red-600 text-white py-2 px-6 gap-5 rounded-full hidden">
           <MdOutlineAttachMoney />

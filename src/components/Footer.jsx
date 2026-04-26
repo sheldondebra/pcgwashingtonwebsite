@@ -9,11 +9,11 @@ import { FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-blue-950 px-14 py-18">
+    <div className=" bg-linear-to-r from-blue-800 to-blue-500 px-14 py-18">
       <div className="container mx-auto grid md:grid-cols-4 gap-23">
         <div>
           <img src="/assets/pcgfooterlogo.png" className="w-53 " />
-          <p className="text-white mt-2">
+          <p className="text-white mt-2 text-sm">
             Presbyterian Church of Ghana – Washington DC North District is a
             united body of congregations committed to Christ-centered worship,
             spiritual growth, and community impact across our district.
@@ -25,18 +25,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-white">
-          <h1 className="text-xl font-bold mb-6 ">Quick Links</h1>
+          <h1 className="text-sm font-bold mb-6 ">Quick Links</h1>
           <div className="flex flex-col gap-3 ">
             <Link to="/">Home</Link>
-            <Link to="/">About us</Link>
-            <Link to="/">Committees</Link>
-            <Link to="/">Groups</Link>
-            <Link to="/">Congregation</Link>
-            <Link to="/">Contact Us</Link>
+            <Link to="/aboutus">About us</Link>
+            <Link to="/committees">Committees</Link>
+            <Link to="/groups">Groups</Link>
+            <Link to="/congregation">Congregation</Link>
+            <Link to="/contactus">Contact Us</Link>
           </div>
         </div>
         <div className="text-white">
-          <h1 className="text-xl font-bold mb-6 ">Congregations</h1>
+          <h1 className="text-sm font-bold mb-6 ">Congregations</h1>
           <div className="flex flex-col gap-3 ">
             <Link to="/">Adom Congregation</Link>
             <Link to="/">Capital DC Preaching Point</Link>
@@ -51,7 +51,7 @@ const Footer = () => {
           <h1 className="text-xl font-bold mb-6 ">
             Subscribe to our Newsletter
           </h1>
-          <p>
+          <p className='text-sm'>
             Subscribe to receive updates, devotionals, and important
             announcements from the Presbyterian Church of Ghana.
           </p>
@@ -67,7 +67,7 @@ const Footer = () => {
             Subscribe Now
           </button>
         </div>
-        <p className='text-sm text-gray-300'> 
+        <p className="text-sm text-gray-300">
           © 2026 Presbyterian Church of Ghana – Washington DC North District.
           All Rights Reserved.
         </p>

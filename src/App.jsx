@@ -6,6 +6,9 @@ import About from './routes/About'
 import Committees from './routes/Committees'
 import Leadership from './routes/Leadership'
 import Footer from './components/Footer'
+import Contacts from './routes/Contacts'
+import Congregations from './routes/Congregations'
+import NotFound from './routes/NotFound'
 
 const App = () => {
   return (
@@ -16,6 +19,9 @@ const App = () => {
       <Route path='/aboutus' element={<About/>}/>
       <Route path='/committees' element={<Committees/>}/>
       <Route path='/leadership' element={<Leadership/>}/>
+      <Route path='/contactus' element={<Contacts/>}/>
+      <Route path='/congregation' element={<Congregations/>}/>
+      <Route path='*' element={<NotFound/>}/>
     </Routes>
     <Footer/>
     </>
