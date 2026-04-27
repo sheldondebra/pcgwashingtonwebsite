@@ -64,15 +64,15 @@ const WomensFellowship = () => {
         </p>
       </section>
       <div className="bg-red-50 w-full py-20 px-10">
-        <section className="mx-auto container flex gap-20 ">
-          <div className=" w-1/2 ">
+        <section className="mx-auto container md:flex gap-20 ">
+          <div className=" md:w-1/2 ">
             <div className="flex gap-8">
               <img
                 src="./assets/womenslogo.jpg"
                 alt="womenslogo"
                 className="w-20 h-20 "
               />
-              <h1 className="text-3xl font-bold text-red-600">
+              <h1 className="md:text-3xl font-bold text-red-600">
                 Brief History of the Washington DC North District Women’s
                 Fellowship
               </h1>
@@ -87,7 +87,7 @@ const WomensFellowship = () => {
             </p>
           </div>
 
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <p className="text-gray-600">
               The Washington DC North District Women’s Fellowship was started in
               September 2021 following the creation of the PCG Washington DC

@@ -22,7 +22,7 @@ const Navbar = () => {
    },
    {
      title: "Young Adults' Fellowship",
-     link: "/youngadults",
+     link: "/yaf",
    },
    {
      title: "Young Peoples’ Guild",

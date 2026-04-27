@@ -98,7 +98,7 @@ const Committees = () => {
         </p>
       </section>
 
-      <section className="container mx-auto py-10 ">
+      <section className="container mx-auto py-10 wrap-anywhere">
         <div className="p-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {committees.map((committee, index) => (
             <div
@@ -124,7 +124,7 @@ const Committees = () => {
                 {committee.functions.map((func, i) => (
                   <li
                     key={i}
-                    className="hover:bg-blue-50 text-gray-500 w-max py-1 rounded-2xl  px-2"
+                    className="hover:bg-blue-50 text-gray-500  py-1 rounded-2xl  px-2"
                   >
                     {func}
                   </li>

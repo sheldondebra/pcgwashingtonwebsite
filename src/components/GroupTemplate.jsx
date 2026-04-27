@@ -5,9 +5,11 @@ const GroupTemplate = ({ title, subtitle, description, executives, logo }) => {
   return (
     <div>
       {/* HERO */}
+   
       <section className="text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 flex flex-col justify-center">
         <h1 className="text-white text-4xl font-bold">{title}</h1>
-        <p className="text-gray-300 text-sm mt-3">{subtitle}</p>
+        <p className="text-gray-300 text-sm mt-3">{subtitle}</p> "
+  
       </section>
 
       {/* ABOUT */}
@@ -15,10 +17,11 @@ const GroupTemplate = ({ title, subtitle, description, executives, logo }) => {
         <div className="bg-red-50 w-full py-20 px-10">
           <section className="mx-auto container flex gap-10 flex-col md:flex-row">
             {logo && <img src={logo} alt="logo" className="w-24 h-24" />}
-            <p className="text-gray-600">{description}</p>
+            <p className="text-gray-600 text-center">{description}</p>
           </section>
         </div>
       )}
+
 
       {/* EXECUTIVES */}
       {executives && executives.length > 0 && (

@@ -54,7 +54,7 @@ const About = () => {
         </p>
       </section>
       <section className="md:flex container mx-auto py-20 gap-18 items-center">
-        <div className="md:w-1/2">
+        <div className="md:w-1/2 px-6">
           <h1 className="text-4xl  text-red-700 font-bold">BRIEF HISTORY </h1>
           <h3 className="text-2xl  text-red-700 mb-12">
             OF THE WASHINGTON DC NORTH DISTRICT
@@ -84,7 +84,7 @@ const About = () => {
           <img
             src="/assets/pcggallery.jpg"
             alt=""
-            className="md:h-150 w-full mt-10 object-cover rounded-2xl "
+            className="md:h-150 w-full mt-10 object-cover sm:rounded-2xl "
           />
         </div>
       </section>
@@ -133,7 +133,7 @@ const About = () => {
       </section>
 
       <section className="bg-black p-5 ">
-        <div className="container mx-auto flex py-10 px-5 gap-5 ">
+        <div className="container mx-auto md:flex py-10 px-5 gap-10 space-y-15 ">
           <div>
             <h1 className="text-blue-100 font-bold text-2xl mb-3">
               Elevation To District Status

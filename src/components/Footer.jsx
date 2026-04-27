@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router';
-import { FaEnvelope, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaEnvelope, FaInstagram, FaPhoneAlt, FaYoutube } from "react-icons/fa";
 import { IoMdArrowForward } from "react-icons/io";
 import { FaFacebook } from "react-icons/fa";
+import { IoLocationSharp } from 'react-icons/io5';
+import { MdOutlineMailOutline } from 'react-icons/md';
 
 
 
@@ -49,24 +51,30 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-white">
-          <h1 className="text-xl font-bold mb-6 ">
-            Subscribe to our Newsletter
-          </h1>
-          <p className="text-sm">
-            Subscribe to receive updates, devotionals, and important
-            announcements from the Presbyterian Church of Ghana.
-          </p>
-          <div className="border border-gray-300 rounded-sm px-4 py-1 mt-5 flex items-center justify-between">
-            <FaEnvelope />
-            <input
-              placeholder="Enter your email"
-              className="focus:outline-0 "
-            />
-            <IoMdArrowForward />
+          <h1 className="text-xl font-bold mb-6 ">Get in touch</h1>
+          <div className="flex items-center gap-5 mt-4">
+            <IoLocationSharp className="h-9 w-9 border border-white text-white rounded-full p-2 " />
+            <div>
+              <h2 className="text-sm font-bold">Address</h2>
+              <p className="text-white text-sm">
+                8729 Greenbelt Rd, Greenbelt, MD 20770
+              </p>
+            </div>
           </div>
-          <button className="bg-white w-full mt-3 py-2 px-6 text-blue-900 font-bold rounded-2xl">
-            Subscribe Now
-          </button>
+          <div className="flex items-center gap-5 mt-4">
+            <MdOutlineMailOutline className="h-9 w-9 border border-white text-white rounded-full p-2 " />
+            <div>
+              <h2 className="text-sm font-bold">Email</h2>
+              <p className="text-white">pcgwdcn@gmail.com</p>
+            </div>
+          </div>
+          <div className="flex items-center gap-5 mt-4">
+            <FaPhoneAlt className="h-9 w-9 border border-white text-white rounded-full p-2 " />
+            <div>
+              <h2 className="text-sm font-bold">Phone Number</h2>
+              <p className="text-white">240-264-9953</p>
+            </div>
+          </div>
         </div>
         <p className="text-sm text-gray-300">
           © 2026 Presbyterian Church of Ghana – Washington DC North District.

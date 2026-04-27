@@ -10,18 +10,21 @@ const Congregations = () => {
        logo: "PCG Adom Logo",
        minister: "Rev. Felix Addo Botchway",
        website: true,
+       link: "https://pcgadom.org/",
      },
      {
        name: "Capital DC Preaching Point",
        logo: "PCG Capital DC Logo",
        minister: "Rev. Dr. Michael Obiri-Yeboah",
        website: true,
+       link: "https://pcgcapitaldc.com/",
      },
      {
        name: "Covenant Congregation",
        logo: "PCG Covenant Logo",
        minister: "Rev. Theophilus Odonkor",
        website: true,
+       link: "https://pcgccde.com/",
      },
      {
        name: "Divine Word Congregation",
@@ -42,12 +45,14 @@ const Congregations = () => {
        logo: "PCG Good Shepherd Logo",
        minister: "Mad. Comfort Opare-Ababio",
        website: true,
+       link: "https://pcgigoodshepherd.org/",
      },
      {
        name: "Trinity Congregation",
        logo: "PCG Trinity Logo",
        minister: "Rev. Dr. Ernestina J. Gakpo",
        website: true,
+       link: "https://pcgtrinity.org/",
      },
    ];
 
@@ -62,7 +67,7 @@ const Congregations = () => {
           PCG - Washington DC - North District
         </p>
       </section>
-      <section className='container mx-auto py-15'>
+      <section className="container mx-auto py-15">
         <section className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 p-6">
           {congregations.map((item, index) => (
             <Card
@@ -79,7 +84,7 @@ const Congregations = () => {
                   {item.name}
                 </h2>
 
-                <p className="text-sm text-muted-foreground">{item.minister}</p>
+                <p className="text-sm text-muted-foreground font-bold"> <span className='text-red-400 text-sm'>Minister-In-Charge</span> {item.minister}</p>
               </CardHeader>
 
               <CardContent className="space-y-4">
@@ -93,9 +98,11 @@ const Congregations = () => {
                 {/* Actions */}
                 <div className="flex items-center justify-between">
                   {item.website ? (
-                    <Button size="sm" className="w-full bg-red-800">
-                      Visit Website
-                    </Button>
+                    <a href={item.link} target='_blank'>
+                      <Button size="sm" className="w-full bg-red-800">
+                        Visit Website
+                      </Button>
+                    </a>
                   ) : (
                     <Button size="sm" variant="secondary" className="w-full">
                       Coming Soon
