@@ -49,8 +49,8 @@ const About = () => {
 
   return (
     <div>
-      <SEO 
-        title="About Us" 
+      <SEO
+        title="About Us"
         description="Learn about the history and mission of the Presbyterian Church of Ghana – Washington DC North District. Discover our journey and the leaders guiding our congregations."
       />
       <section className=" text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 items-center flex flex-col justify-center  ">
@@ -181,11 +181,50 @@ const About = () => {
         </div>
       </section>
       <section className="bg-amber-50/40 py-20 px-15">
-        <div className="container mx-auto" >
-          <div className='py-12'>
-            <h1 className='text-2xl text-red-600 font-bold text-center'>Current & Past Key Personnel of the District</h1>
+        <div className="container mx-auto">
+          <div className="py-12">
+            <h1 className="text-2xl text-red-600 font-bold text-center">
+              Current & Past Key Personnel of the District
+            </h1>
           </div>
           <DistrictAccordion />
+        </div>
+      </section>
+      <section className="bg-amber-50">
+        <div className="container mx-auto py-18 px-10 text-center justify-center items-center flex flex-col">
+          <h1 className="text-2xl text-center font-bold text-blue-700">
+            Election of District Officers, Group Leaders and Committee
+            Chairpersons
+          </h1>
+          <p className="text-gray-500 mt-5 max-w-170">
+            On July 24, 2021, the District Minister, Rev. Felix Addo Botchway
+            hosted members from the proposed new District at Adom for the
+            election of District officers and other leaders. Notable
+            appointments included:
+          </p>
+          <ol className="mt-5 gap-3 space-y-3">
+            <li>
+              <span className="font-semibold">Mr. Isaac Apea</span> of Trinity
+              Congregation was elected as District Clerk.
+            </li>
+            <li>
+              <span className="font-semibold">Mr. Eric Frimpong </span>of Adom
+              Congregation was elected as the District Lay Representative on the
+              Presbytery Session Council.
+            </li>
+            <li>
+              <span className="font-semibold">Ms. Janet Koranteng</span> of
+              Trinity Congregation was appointed District Treasurer.
+            </li>
+            <li className="font-semibold">
+              Committee Chairpersons were appointed from the various
+              Congregations and Preaching Points.
+            </li>
+            <li className="font-semibold">
+              Church Groups nominated and elected their leaders from the
+              Congregations and Preaching Points.
+            </li>
+          </ol>
         </div>
       </section>
     </div>
