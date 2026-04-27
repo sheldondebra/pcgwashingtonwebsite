@@ -37,16 +37,19 @@ const Hero = () => {
   return (
     <>
       <Carousel
+        opts={{
+          loop: true,
+        }}
         plugins={[plugin.current]}
-        className="w-full   "
+        className="w-full overflow-x-hidden"
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
-        <CarouselContent className="w-full">
+        <CarouselContent className="w-full ml-0">
           {sliderData.map((slides, index) => (
-            <CarouselItem key={index}>
-              <div className="">
-                <Card className="rounded-none">
+            <CarouselItem key={index} className="pl-0">
+              <div className="w-full">
+                <Card className="rounded-none border-none">
                   <CardContent
                     className="relative flex items-center justify-center h-[80vh] p-6 bg-cover bg-center"
                     style={{ backgroundImage: `url(${slides.image})` }}
@@ -75,6 +78,8 @@ const Hero = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
+        <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 border-none text-white text-5xl hidden md:flex" />
+        <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-white/20 hover:bg-white/40 border-none text-white hidden md:flex" />
       </Carousel>
     </>
   );
