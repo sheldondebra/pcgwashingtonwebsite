@@ -9,30 +9,27 @@ const NewsCard = () => {
   const newsData = [
     {
       title: "District Thanksgiving Service Held Successfully",
-      image:
-        "https://img.freepik.com/free-photo/people-worship-god-church_1150-18577.jpg",
+      image: "/assets/womanaward.jpg",
       description:
         "The Washington DC North District gathered in unity for a powerful thanksgiving service filled with praise, prayer, and fellowship.",
       date: "March 10, 2026",
     },
     {
       title: "Youth Ministry Retreat 2026",
-      image:
-        "https://img.freepik.com/free-photo/group-people-hands-raised-hallelujah_1150-18578.jpg",
+      image: "/assets/pastormember.jpg",
       description:
         "The district youth experienced a spirit-filled retreat focused on discipleship, leadership, and spiritual growth.",
       date: "February 18, 2026",
     },
     {
       title: "New Preaching Point Inaugurated",
-      image:
-        "https://img.freepik.com/free-photo/inside-church-with-cross-light_1150-18579.jpg",
+      image: "/assets/bluwwoman.jpg",
       description:
         "A new preaching point was officially inaugurated, expanding the mission work of the district.",
       date: "January 25, 2026",
     },
     {
-      title: "District Prayer Conference",
+      title: "Children Service",
       image:
         "https://img.freepik.com/free-photo/church-congregation-praying-together_1150-18580.jpg",
       description:
