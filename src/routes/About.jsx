@@ -1,6 +1,7 @@
 import React from 'react'
 import { LuChurch } from "react-icons/lu";
 import { FaRegUser } from "react-icons/fa";
+import DistrictAccordion from '../components/DistrictAccordion';
 
 
 
@@ -43,6 +44,8 @@ const About = () => {
       role: "Member",
     },
   ];
+
+  
 
 
   return (
@@ -172,6 +175,14 @@ const About = () => {
               elevated to Congregational status.
             </p>
           </div>
+        </div>
+      </section>
+      <section className="bg-amber-50/40 py-20 px-15">
+        <div className="container mx-auto" >
+          <div className='py-12'>
+            <h1 className='text-2xl text-red-600 font-bold text-center'>Current & Past Key Personnel of the District</h1>
+          </div>
+          <DistrictAccordion />
         </div>
       </section>
     </div>
