@@ -26,7 +26,7 @@ const EventCard = ({ event }) => {
     if (period.toLowerCase() === "am" && hours === 12) hours = 0;
 
     return new Date(
-      2026,
+      2025,
       monthMap[event.date.month],
       event.date.day,
       hours,
@@ -84,7 +84,7 @@ const EventCard = ({ event }) => {
 
         <div className="flex items-center gap-2">
           <FiCalendar className="text-red-600" />
-          {event.date.day} {event.date.month} 2026
+          {event.date.day} {event.date.month} 2025
         </div>
       </div>
 
