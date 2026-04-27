@@ -1,4 +1,5 @@
 import React from 'react'
+import ProfileImage from '../components/ui/ProfileImage'
 
 const Leadership = () => {
 
@@ -68,7 +69,7 @@ const Leadership = () => {
               key={index}
               className="text-center bg-white p-6 rounded-2xl flex flex-col items-center shadow"
             >
-              <img
+              <ProfileImage
                 src={person.image}
                 alt={person.name}
                 className=" w-50 h-50 object-cover  object-top rounded-full "

@@ -1,11 +1,12 @@
 import React from "react";
+import ProfileImage from "./ui/ProfileImage";
 
 const ExecutiveCard = ({ person }) => {
   return (
     <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition duration-300 overflow-hidden">
       {/* Image */}
       <div className="h-56 w-full overflow-hidden flex items-center justify-center">
-        <img
+        <ProfileImage
           src={person.image}
           alt={person.name}
           className=" w-50 h-50 object-cover object-top rounded-full  border-5"
