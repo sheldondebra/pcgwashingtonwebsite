@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card , CardHeader, CardContent} from '../components/ui/card';
 import { Button } from '../components/ui/button';
+import SEO from '../components/ui/SEO';
 
 const Congregations = () => {
 
@@ -59,6 +60,10 @@ const Congregations = () => {
 
   return (
     <div>
+      <SEO 
+        title="Congregations" 
+        description="Explore the congregations and preaching points within the Presbyterian Church of Ghana – Washington DC North District. Find a location near you."
+      />
       <section className=" text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 items-center flex flex-col justify-center  ">
         <h1 className="text-white text-4xl font-bold">
           Congregation / Preaching Points

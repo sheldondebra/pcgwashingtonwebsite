@@ -41,13 +41,13 @@ const Footer = () => {
         <div className="text-white">
           <h1 className="font-bold mb-6 text-lg border-b border-blue-400 pb-2 inline-block">Congregations</h1>
           <div className="flex flex-col gap-3 text-sm">
-            <Link to="/" className="hover:underline transition">Adom Congregation</Link>
-            <Link to="/" className="hover:underline transition">Capital DC Preaching Point</Link>
-            <Link to="/" className="hover:underline transition">Convenant Congregation</Link>
-            <Link to="/" className="hover:underline transition">Divine Word Congregation</Link>
-            <Link to="/" className="hover:underline transition">Faith Preaching Point</Link>
-            <Link to="/" className="hover:underline transition">Good Shepherd Preaching Point</Link>
-            <Link to="/" className="hover:underline transition">Trinity Congregation</Link>
+            <a href="https://pcgadom.org/" target="_blank" rel="noreferrer" className="hover:underline transition">Adom Congregation</a>
+            <a href="https://pcgcapitaldc.com/" target="_blank" rel="noreferrer" className="hover:underline transition">Capital DC Preaching Point</a>
+            <a href="https://pcgccde.com/" target="_blank" rel="noreferrer" className="hover:underline transition">Covenant Congregation</a>
+            <Link to="/congregation" className="hover:underline transition">Divine Word Congregation</Link>
+            <Link to="/congregation" className="hover:underline transition">Faith Preaching Point</Link>
+            <a href="https://pcgigoodshepherd.org/" target="_blank" rel="noreferrer" className="hover:underline transition">Good Shepherd Preaching Point</a>
+            <a href="https://pcgtrinity.org/" target="_blank" rel="noreferrer" className="hover:underline transition">Trinity Congregation</a>
           </div>
         </div>
         <div className="text-white">

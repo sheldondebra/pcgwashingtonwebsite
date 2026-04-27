@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiClock, FiMapPin, FiCalendar } from "react-icons/fi";
 import EventCard from '../components/EventCard';
+import SEO from '../components/ui/SEO';
 
 const Events = () => {
   const events = [
@@ -97,6 +98,10 @@ const Events = () => {
   ];
   return (
     <div className="bg-gray-50">
+      <SEO 
+        title="Upcoming Events" 
+        description="Stay connected with the upcoming programs and events of the Presbyterian Church of Ghana – Washington DC North District."
+      />
       <section className=" text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 items-center flex flex-col justify-center  ">
         <h1 className="text-white text-4xl font-bold">Our Events</h1>
         <p className="text-gray-300 text-sm leading-5 mt-3">

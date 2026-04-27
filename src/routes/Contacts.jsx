@@ -3,13 +3,15 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import SendMessage from '../components/SendMessage';
-
-
-
+import SEO from '../components/ui/SEO';
 
 const Contacts = () => {
   return (
     <div>
+      <SEO 
+        title="Contact Us" 
+        description="Get in touch with the Presbyterian Church of Ghana – Washington DC North District. Contact us for questions, support, or to connect with our congregations."
+      />
       <section className=" text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 items-center flex flex-col justify-center  ">
         <h1 className="text-white text-4xl font-bold">Contact Us</h1>
         <p className="text-gray-300 text-sm leading-5 mt-3">

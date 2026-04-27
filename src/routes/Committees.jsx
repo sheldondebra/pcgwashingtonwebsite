@@ -1,4 +1,5 @@
 import React from 'react'
+import SEO from '../components/ui/SEO'
 
 const Committees = () => {
 
@@ -91,6 +92,10 @@ const Committees = () => {
 
   return (
     <div className="bg-gray-200">
+      <SEO 
+        title="District Committees" 
+        description="Learn about the various committees within the Presbyterian Church of Ghana – Washington DC North District and their functions."
+      />
       <section className=" text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 items-center flex flex-col justify-center  ">
         <h1 className="text-white text-4xl font-bold">District Committees</h1>
         <p className="text-gray-300 text-sm leading-5 mt-3">

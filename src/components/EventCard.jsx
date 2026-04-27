@@ -26,7 +26,7 @@ const EventCard = ({ event }) => {
     if (period.toLowerCase() === "am" && hours === 12) hours = 0;
 
     return new Date(
-      2025,
+      2026,
       monthMap[event.date.month],
       event.date.day,
       hours,
@@ -35,60 +35,22 @@ const EventCard = ({ event }) => {
   };
 
 
-  const formatDateLocal = (date) => {
-    const pad = (n) => String(n).padStart(2, "0");
-
-    return (
-      date.getFullYear() +
-      pad(date.getMonth() + 1) +
-      pad(date.getDate()) +
-      "T" +
-      pad(date.getHours()) +
-      pad(date.getMinutes()) +
-      pad(date.getSeconds())
-    );
+  const formatGoogleDate = (date) => {
+    return date.toISOString().replace(/-|:|\.\d+/g, "");
   };
 
 
-  const generateICS = (event) => {
+  const addToGoogleCalendar = (event) => {
     const start = parseEventDate(event);
-    const end = new Date(start.getTime() + 60 * 60 * 1000);
+    const end = new Date(start.getTime() + 60 * 60 * 1000); // 1 hour duration
+    
+    const details = event.description || "";
+    const location = event.location || "";
+    const title = event.title;
 
-    return [
-      "BEGIN:VCALENDAR",
-      "VERSION:2.0",
-      "CALSCALE:GREGORIAN",
-      "BEGIN:VEVENT",
-      `UID:${Date.now()}@puc-events`,
-      `DTSTAMP:${formatDateLocal(new Date())}`,
-      `DTSTART:${formatDateLocal(start)}`,
-      `DTEND:${formatDateLocal(end)}`,
-      `SUMMARY:${event.title}`,
-      `LOCATION:${event.location}`,
-      `DESCRIPTION:${event.description || ""}`,
-      "END:VEVENT",
-      "END:VCALENDAR",
-    ].join("\r\n"); 
-  };
-
-  const downloadICS = (event) => {
-    const ics = generateICS(event);
-
-    const blob = new Blob([ics], {
-      type: "text/calendar;charset=utf-8;",
-    });
-
-    const url = window.URL.createObjectURL(blob);
-
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = `${event.title.replace(/[^a-z0-9]/gi, "_")}.ics`;
-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-
-    window.URL.revokeObjectURL(url);
+    const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${formatGoogleDate(start)}/${formatGoogleDate(end)}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
+    
+    window.open(url, "_blank");
   };
 
   return (
@@ -100,7 +62,7 @@ const EventCard = ({ event }) => {
           <p className="text-xs uppercase">{event.date.month}</p>
         </div>
 
-        <span className="text-xs text-gray-400">PUC Washington DC</span>
+        <span className="text-xs text-gray-400">PCG Washington DC</span>
       </div>
 
       {/* Title */}
@@ -122,25 +84,25 @@ const EventCard = ({ event }) => {
 
         <div className="flex items-center gap-2">
           <FiCalendar className="text-red-600" />
-          {event.date.day} {event.date.month}
+          {event.date.day} {event.date.month} 2026
         </div>
       </div>
 
       {/* Description */}
       {event.description && (
-        <p className="mt-4 text-sm text-gray-500">{event.description}</p>
+        <p className="mt-4 text-sm text-gray-500 line-clamp-2">{event.description}</p>
       )}
 
       {/* CTA */}
       <button
-        onClick={() => downloadICS(event)}
-        className="mt-5 w-full py-2 rounded-lg bg-red-700 text-white text-sm font-medium hover:bg-primary/90 transition flex items-center justify-center gap-2"
+        onClick={() => addToGoogleCalendar(event)}
+        className="mt-5 w-full py-2 rounded-lg bg-red-700 text-white text-sm font-medium hover:bg-red-600 transition flex items-center justify-center gap-2"
       >
         <span className="flex items-center gap-1">
           <FiCalendar />
           <FiPlus size={14} />
         </span>
-        Add to Calendar
+        Add to Google Calendar
       </button>
     </div>
   );

@@ -2,8 +2,7 @@ import React from 'react'
 import { LuChurch } from "react-icons/lu";
 import { FaRegUser } from "react-icons/fa";
 import DistrictAccordion from '../components/DistrictAccordion';
-
-
+import SEO from '../components/ui/SEO';
 
 const About = () => {
 
@@ -50,6 +49,10 @@ const About = () => {
 
   return (
     <div>
+      <SEO 
+        title="About Us" 
+        description="Learn about the history and mission of the Presbyterian Church of Ghana – Washington DC North District. Discover our journey and the leaders guiding our congregations."
+      />
       <section className=" text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 items-center flex flex-col justify-center  ">
         <h1 className="text-white text-4xl font-bold">ABOUT US</h1>
         <p className="text-gray-300 text-sm leading-5 mt-3">

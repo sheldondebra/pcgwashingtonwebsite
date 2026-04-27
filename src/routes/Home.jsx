@@ -5,10 +5,15 @@ import VisionCard from '../components/VisionCard'
 import AboutSide from '../components/AboutSide'
 import NewsSection from '../components/NewsSection'
 import MobileAppAd from '../components/MobileAppAd'
+import SEO from '../components/ui/SEO'
 
 const Home = () => {
   return (
     <div>
+      <SEO 
+        title="Home" 
+        description="Welcome to the Presbyterian Church of Ghana – Washington DC North District. A united body of congregations committed to Christ-centered worship and community impact."
+      />
       <Hero/>
       <SubHero/>
       <VisionCard/>

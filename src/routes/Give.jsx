@@ -2,12 +2,15 @@ import React from 'react'
 import SendMessage from '../components/SendMessage'
 import { TbProgressHelp } from "react-icons/tb";
 import { LuPhoneCall } from "react-icons/lu";
-
-
+import SEO from '../components/ui/SEO';
 
 const Give = () => {
   return (
     <div>
+      <SEO 
+        title="Give / Donate" 
+        description="Support the mission and ministry of the Presbyterian Church of Ghana – Washington DC North District. Learn about ways to give online or by check."
+      />
       <section className=" text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 items-center flex flex-col justify-center  ">
         <h1 className="text-white text-4xl font-bold">Give / Support Us</h1>
         <p className="text-gray-300 text-sm leading-5 mt-3">
