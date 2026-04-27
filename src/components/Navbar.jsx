@@ -143,6 +143,16 @@ const Navbar = () => {
             Events
           </NavLink>
           <NavLink
+            to="/news"
+            className={({ isActive }) =>
+              `block px-3 py-2 rounded transition ${
+                isActive ? "bg-red-200 font-semibold" : "hover:bg-red-100"
+              }`
+            }
+          >
+            News
+          </NavLink>
+          <NavLink
             to="/contactus"
             className={({ isActive }) =>
               `block px-3 py-2 rounded transition ${
@@ -180,24 +190,30 @@ const Navbar = () => {
             </Link>
 
             <div className="flex flex-col gap-3">
-              <NavLink 
-                to="/" 
+              <NavLink
+                to="/"
                 onClick={() => setMobMenu(false)}
-                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`
+                }
               >
                 Home
               </NavLink>
-              <NavLink 
-                to="/aboutus" 
+              <NavLink
+                to="/aboutus"
                 onClick={() => setMobMenu(false)}
-                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`
+                }
               >
                 About
               </NavLink>
-              <NavLink 
-                to="/committees" 
+              <NavLink
+                to="/committees"
                 onClick={() => setMobMenu(false)}
-                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`
+                }
               >
                 Committees
               </NavLink>
@@ -225,7 +241,9 @@ const Navbar = () => {
                     <NavLink
                       key={index}
                       to={item.link}
-                      className={({ isActive }) => `block pl-6 py-2 text-sm transition ${isActive ? "text-red-800 font-bold" : "text-red-600 hover:bg-red-50"}`}
+                      className={({ isActive }) =>
+                        `block pl-6 py-2 text-sm transition ${isActive ? "text-red-800 font-bold" : "text-red-600 hover:bg-red-50"}`
+                      }
                       onClick={() => setMobMenu(false)}
                     >
                       {item.title}
@@ -234,31 +252,39 @@ const Navbar = () => {
                 </div>
               </div>
 
-              <NavLink 
-                to="/leadership" 
+              <NavLink
+                to="/leadership"
                 onClick={() => setMobMenu(false)}
-                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`
+                }
               >
                 Leadership
               </NavLink>
-              <NavLink 
-                to="/congregation" 
+              <NavLink
+                to="/congregation"
                 onClick={() => setMobMenu(false)}
-                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`
+                }
               >
                 Congregations
               </NavLink>
-              <NavLink 
-                to="/events" 
+              <NavLink
+                to="/events"
                 onClick={() => setMobMenu(false)}
-                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`
+                }
               >
                 Events
               </NavLink>
-              <NavLink 
-                to="/contactus" 
+              <NavLink
+                to="/contactus"
                 onClick={() => setMobMenu(false)}
-                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`
+                }
               >
                 Contact Us
               </NavLink>

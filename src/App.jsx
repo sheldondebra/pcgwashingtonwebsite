@@ -18,6 +18,8 @@ import YPG from "./routes/YPG";
 import Presbyters from "./routes/Presbyters";
 import Mens from "./routes/Mens";
 import YAF from "./routes/YAF";
+import BlogDetails from "./routes/BlogDetails";
+import News from "./routes/News";
 
 const App = () => {
   return (
@@ -40,6 +42,9 @@ const App = () => {
         <Route path="/mensfellowship" element={<Mens/>}/>
         <Route path="/yaf" element={<YAF/>}/>
         <Route path="*" element={<NotFound />} />
+        <Route path="/blog/:id" element={<BlogDetails/>}/>
+        <Route path="/news" element={<News/>}/>
+
       </Routes>
       <Footer />
     </>

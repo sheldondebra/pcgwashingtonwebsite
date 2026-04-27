@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaArrowRight } from "react-icons/fa6";
 import { LuCalendar } from "react-icons/lu";
+import { Link } from 'react-router';
 
 
 
@@ -8,6 +9,7 @@ const NewsCard = () => {
 
   const newsData = [
     {
+      id:1,
       title: "District Thanksgiving Service Held Successfully",
       image: "/assets/womanaward.jpg",
       description:
@@ -15,6 +17,7 @@ const NewsCard = () => {
       date: "March 10, 2026",
     },
     {
+      id: 2,
       title: "Youth Ministry Retreat 2026",
       image: "/assets/pastormember.jpg",
       description:
@@ -22,6 +25,7 @@ const NewsCard = () => {
       date: "February 18, 2026",
     },
     {
+      id: 3,
       title: "New Preaching Point Inaugurated",
       image: "/assets/bluwwoman.jpg",
       description:
@@ -29,6 +33,7 @@ const NewsCard = () => {
       date: "January 25, 2026",
     },
     {
+      id:4,
       title: "Children Service",
       image:
         "https://img.freepik.com/free-photo/church-congregation-praying-together_1150-18580.jpg",
@@ -42,28 +47,30 @@ const NewsCard = () => {
   return (
     <div>
       <div className="grid md:grid-cols-4 gap-5">
-        {newsData.map((news, index) => (
-          <div
-            key={index}
-            className="bg-amber-50 p-8 rounded-4xl shadow flex flex-col justify-between"
-          >
-            <img
-              src={news.image}
-              alt={news.title}
-              className="w-full h-52 object-cover rounded-2xl mb-10"
-            />
-            <h1 className="text-2xl font-semibold mb-2">{news.title}</h1>
-            <p className="text-gray-500">{news.description}</p>
-            <button className="text-red-700 flex items-center gap-6 my-5">
-              <FaArrowRight />
-              Read More
-            </button>
-            <hr />
-            <div className='flex gap-5 items-center text-gray-600 mt-4 text-sm'>
-              <LuCalendar />
-              {news.date}
+        {newsData.map((news) => (
+          <Link key={news.id} to={`/blog/${news.id}`}>
+            <div
+            
+              className="bg-amber-50 p-8 rounded-4xl shadow flex flex-col justify-between"
+            >
+              <img
+                src={news.image}
+                alt={news.title}
+                className="w-full h-52 object-cover rounded-2xl mb-10"
+              />
+              <h1 className="text-2xl font-semibold mb-2">{news.title}</h1>
+              <p className="text-gray-500">{news.description}</p>
+              <button className="text-red-700 flex items-center gap-6 my-5">
+                <FaArrowRight />
+                Read More
+              </button>
+              <hr />
+              <div className="flex gap-5 items-center text-gray-600 mt-4 text-sm">
+                <LuCalendar />
+                {news.date}
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
