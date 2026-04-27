@@ -180,21 +180,33 @@ const Navbar = () => {
             </Link>
 
             <div className="flex flex-col gap-3">
-              <Link to="/" onClick={() => setMobMenu(false)}>
+              <NavLink 
+                to="/" 
+                onClick={() => setMobMenu(false)}
+                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+              >
                 Home
-              </Link>
-              <Link to="/aboutus" onClick={() => setMobMenu(false)}>
+              </NavLink>
+              <NavLink 
+                to="/aboutus" 
+                onClick={() => setMobMenu(false)}
+                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+              >
                 About
-              </Link>
-              <Link to="/committees" onClick={() => setMobMenu(false)}>
+              </NavLink>
+              <NavLink 
+                to="/committees" 
+                onClick={() => setMobMenu(false)}
+                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+              >
                 Committees
-              </Link>
+              </NavLink>
 
               {/* Mobile Dropdown */}
               <div>
                 <div
                   onClick={() => setOpenGroups(!openGroups)}
-                  className="cursor-pointer flex justify-between items-center"
+                  className="cursor-pointer flex justify-between items-center px-3 py-2 hover:bg-gray-100 rounded"
                 >
                   <span>Groups</span>
                   {openGroups ? (
@@ -210,36 +222,54 @@ const Navbar = () => {
                   }`}
                 >
                   {groups.map((item, index) => (
-                    <Link
+                    <NavLink
                       key={index}
                       to={item.link}
-                      className="block pl-3 py-2 text-sm text-red-600 hover:bg-red-100 rounded"
+                      className={({ isActive }) => `block pl-6 py-2 text-sm transition ${isActive ? "text-red-800 font-bold" : "text-red-600 hover:bg-red-50"}`}
                       onClick={() => setMobMenu(false)}
                     >
                       {item.title}
-                    </Link>
+                    </NavLink>
                   ))}
                 </div>
               </div>
 
-              <Link to="/leadership" onClick={() => setMobMenu(false)}>
+              <NavLink 
+                to="/leadership" 
+                onClick={() => setMobMenu(false)}
+                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+              >
                 Leadership
-              </Link>
-              <Link to="/congregation" onClick={() => setMobMenu(false)}>
+              </NavLink>
+              <NavLink 
+                to="/congregation" 
+                onClick={() => setMobMenu(false)}
+                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+              >
                 Congregations
-              </Link>
-              <Link to="/events" onClick={() => setMobMenu(false)}>
+              </NavLink>
+              <NavLink 
+                to="/events" 
+                onClick={() => setMobMenu(false)}
+                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+              >
                 Events
-              </Link>
-              <Link to="/contactus" onClick={() => setMobMenu(false)}>
+              </NavLink>
+              <NavLink 
+                to="/contactus" 
+                onClick={() => setMobMenu(false)}
+                className={({ isActive }) => `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`}
+              >
                 Contact Us
-              </Link>
+              </NavLink>
             </div>
 
-            <button className="flex items-center bg-red-600 text-white py-2 px-6 gap-2 mt-6 rounded-full">
-              <MdOutlineAttachMoney />
-              Give
-            </button>
+            <Link to="/give" onClick={() => setMobMenu(false)}>
+              <button className="flex items-center justify-center w-full bg-red-600 text-white py-2 px-6 gap-2 mt-6 rounded-full hover:bg-red-500 transition">
+                <MdOutlineAttachMoney />
+                Give
+              </button>
+            </Link>
           </div>
         </div>
 

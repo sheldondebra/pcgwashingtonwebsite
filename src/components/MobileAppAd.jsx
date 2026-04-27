@@ -3,8 +3,8 @@ import { FaGooglePlay } from "react-icons/fa";
 
 const MobileAppAd = () => {
   return (
-    <div className="bg-red-800 px-10 py-22 text-center text-white ">
-      <div className="w-full text-center bg-neutral-primary-soft p-6  rounded-base shadow-xs container mx-auto flex flex-col items-center">
+    <div className="bg-red-800 px-6 md:px-10 py-16 md:py-22 text-center text-white ">
+      <div className="w-full text-center bg-neutral-primary-soft p-6 md:p-12 rounded-base shadow-xs container mx-auto flex flex-col items-center">
         <h5 className="mb-3 text-3xl  tracking-tight font-semibold text-heading">
           Stay Connected While You Travel Abroad
         </h5>

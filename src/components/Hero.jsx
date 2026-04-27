@@ -55,16 +55,16 @@ const Hero = () => {
                     <div className="absolute inset-0 bg-black/80"></div>
 
                     {/* Content */}
-                    <div className="relative z-10 text-center max-w-4xl text-white  space-y-28">
-                      <h1 className="text-4xl md:text-6xl font-bold mb-12">
+                    <div className="relative z-10 text-center max-w-4xl text-white space-y-12 md:space-y-28">
+                      <h1 className="text-3xl md:text-6xl font-bold mb-6 md:mb-12">
                         {slides.title}
                       </h1>
 
-                      <p className="text-lg md:text-xl mb-6 text-gray-200 leading-7  not-first:mt-6">
+                      <p className="text-base md:text-xl mb-6 text-gray-200 leading-relaxed max-w-2xl mx-auto">
                         {slides.description}
                       </p>
                       <Link to={slides.link}>
-                        <button className="bg-red-800 hover:bg-red-500 text-white px-6 py-3 rounded-lg font-semibold transition">
+                        <button className="bg-red-800 hover:bg-red-500 text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg">
                           {slides.cta}
                         </button>
                       </Link>

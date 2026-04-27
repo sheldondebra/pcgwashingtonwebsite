@@ -3,14 +3,14 @@ import { Link } from 'react-router';
 
 const AboutSide = () => {
   return (
-    <div className="md:flex items-center">
-      <div>
+    <div className="flex flex-col md:flex-row items-center">
+      <div className="w-full md:w-1/2">
         <img
           src="./assets/aboutside.jpg"
-          className="md:h-180  h-70   md:w-820"
+          className="w-full h-72 md:h-[600px] object-cover"
         />
       </div>
-      <div className="container mx-auto p-10  md:p-20">
+      <div className="w-full md:w-1/2 p-8 md:p-20">
         <h1 className="text-3xl mb-6 font-bold">About Us</h1>
         <hr className="w-32 mb-4  border-red-800" />
         <p className="text-gray-500 ">

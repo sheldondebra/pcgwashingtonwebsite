@@ -25,25 +25,25 @@ const VisionCard = () => {
 
 
   return (
-    <div className="bg-gray-100 py-22 px-4">
+    <div className="bg-gray-100 py-12 md:py-22 px-4">
       <div className="container mx-auto ">
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {contentCards.map((items, index) => (
             <div
               key={index}
-              className="border border-gray-200 pb-8 bg-white shadow rounded-3xl "
+              className="border border-gray-200 pb-8 bg-white shadow-sm rounded-3xl overflow-hidden hover:shadow-md transition-shadow duration-300"
             >
               <img
                 src={items.image}
                 alt={items.title}
-                className="rounded-3xl mb-8"
+                className="w-full h-56 object-cover"
               />
-              <div className='px-12 py-4'>
-                <h1 className="text-2xl font-bold text-red-800  mb-2 ">
+              <div className='px-6 md:px-10 py-6'>
+                <h1 className="text-xl md:text-2xl font-bold text-red-800 mb-2">
                   {items.title}
                 </h1>
-                <hr className="w-32 mb-4  border-red-800" />
-                <p className="text-gray-500 text-sm">{items.description}</p>
+                <hr className="w-16 md:w-32 mb-4 border-red-800" />
+                <p className="text-gray-600 text-sm leading-relaxed">{items.description}</p>
               </div>
             </div>
           ))}
