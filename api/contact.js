@@ -104,20 +104,30 @@ console.log("api");
 
 
 
-        await transporter.sendMail({
-          from: `"Websites"<${process.env.SMTP_USER}>`,
-          to: email,
-          subject: "We received your message",
-          html: userHTML,
-        });
+    // Send Confirmation to User
+    await transporter.sendMail({
+      from: `"PUC Washington DC" <${process.env.SMTP_USER}>`,
+      to: email,
+      subject: "We received your message",
+      html: userHTML,
+    });
 
-            return res.status(200).json({success:true , message: "Email sent Successfully"})
+    // Send Notification to Admin
+    await transporter.sendMail({
+      from: `"Websites" <${process.env.SMTP_USER}>`,
+      to: process.env.SMTP_USER,
+      subject: subject,
+      html: adminHTML,
+    });
 
-  }catch(err){
-    console.log("Email Error: " + err.message)
+    return res.status(200).json({ success: true, message: "Email sent Successfully" })
+
+  } catch (err) {
+    console.error("Email Error:", err);
     return res.status(500).json({
       success: false,
-      message: "Email Failed"
+      message: "Email Failed",
+      error: err.message
     })
   } 
 
