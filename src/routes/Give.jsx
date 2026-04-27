@@ -20,6 +20,7 @@ const Give = () => {
             <SendMessage
               title="Contact us to donate?"
               btnLabel="I want to support"
+              type="donation"
             />
             <div className="mt-5">
               <div className="flex items-center justify-center gap-3">

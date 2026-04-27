@@ -52,7 +52,7 @@ const Contacts = () => {
             </div>
           </div>
           <div className="md:w-1/2 p-2">
-            <SendMessage title='Send us a Message' btnLabel='Send Message'/>
+            <SendMessage title='Send us a Message' btnLabel='Send Message' type="contact"/>
           </div>
         </div>
       </section>

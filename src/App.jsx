@@ -12,6 +12,9 @@ import NotFound from "./routes/NotFound";
 import Give from "./routes/Give";
 import Events from "./routes/Events";
 import WomensFellowship from "./routes/WomensFellowship";
+import SingingBand from "./routes/SingingBand";
+import Choir from "./routes/Choir";
+import YPG from "./routes/YPG";
 
 const App = () => {
   return (
@@ -27,7 +30,11 @@ const App = () => {
         <Route path="/give" element={<Give />} />
         <Route path="/events" element={<Events />} />
         <Route path="/womenfellowship" element={<WomensFellowship />} />
+        <Route path="/choir" element={<Choir />} />
+        <Route path="/ypg" element={<YPG />} />
+
         <Route path="*" element={<NotFound />} />
+       
       </Routes>
       <Footer />
     </>
