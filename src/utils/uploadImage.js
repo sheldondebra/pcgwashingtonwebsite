@@ -6,8 +6,8 @@ export const uploadImage = async (file,setProgress) =>{
   formData.append("upload_preset", "pcgwashingtonDc");
   formData.append("cloud_name", "dshhcmm8p");
 
-  const res = await axios.post(
-    "https://api.cloudinary.com/v1_1/Root/image/upload", 
+  const { data } = await axios.post(
+    "https://api.cloudinary.com/v1_1/dshhcmm8p/image/upload", 
     formData,{
       onUploadProgress:(processEvent) =>{
         if(setProgress){

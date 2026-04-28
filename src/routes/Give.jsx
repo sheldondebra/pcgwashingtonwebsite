@@ -1,4 +1,3 @@
-import React from 'react'
 import SendMessage from '../components/SendMessage'
 import { TbProgressHelp } from "react-icons/tb";
 import { LuPhoneCall } from "react-icons/lu";

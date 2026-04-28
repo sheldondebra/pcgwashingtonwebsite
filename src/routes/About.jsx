@@ -1,4 +1,3 @@
-import React from 'react'
 import { LuChurch } from "react-icons/lu";
 import { FaRegUser } from "react-icons/fa";
 import DistrictAccordion from '../components/DistrictAccordion';
@@ -173,9 +172,9 @@ const About = () => {
               Congregation, Good Shepherd Preaching Point, Covenant Preaching
               Point, and Divine Word Preaching Point. Two new Preaching Points,
               namely Faith, planted by Adom and Capital DC, planted by Rev. Dr.
-              Michael Obiri-Yeboah and his family have since joined the fold.
+              Michael Obiri-Yeboah and his family have since joined the fold.
               Furthermore, Covenant, Divine Word, and Capital DC have since been
-              elevated to Congregational status.
+              elevated to Congregational status.
             </p>
           </div>
         </div>

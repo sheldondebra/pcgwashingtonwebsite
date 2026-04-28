@@ -1,4 +1,3 @@
-import React from "react";
 import { FaUser, FaBriefcase, FaMapMarkerAlt } from "react-icons/fa";
 
 const PersonCard = ({ person }) => {

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link, useParams } from 'react-router';
 import { TbError404 } from "react-icons/tb";
 import { Button } from '../components/ui/button';

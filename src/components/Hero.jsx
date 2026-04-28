@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useMemo } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { Card, CardContent } from "../components/ui/card";
 import {
@@ -11,8 +11,9 @@ import {
 import { Link } from "react-router";
 
 const Hero = () => {
-  const plugin = React.useRef(
-    Autoplay({ delay: 4000, stopOnInteraction: true }),
+  const autoplay = useMemo(
+    () => Autoplay({ delay: 4000, stopOnInteraction: true }),
+    [],
   );
 
   const sliderData = [
@@ -40,10 +41,10 @@ const Hero = () => {
         opts={{
           loop: true,
         }}
-        plugins={[plugin.current]}
+        plugins={[autoplay]}
         className="w-full overflow-x-hidden"
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
+        onMouseEnter={() => autoplay.stop()}
+        onMouseLeave={() => autoplay.reset()}
       >
         <CarouselContent className="w-full ml-0">
           {sliderData.map((slides, index) => (

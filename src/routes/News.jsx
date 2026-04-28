@@ -1,4 +1,3 @@
-import React from 'react'
 import SEO from "../components/ui/SEO";
 import NewsSection from '../components/NewsSection';
 

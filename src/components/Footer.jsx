@@ -1,7 +1,5 @@
-import React from 'react'
 import { Link } from 'react-router';
-import { FaEnvelope, FaInstagram, FaPhoneAlt, FaYoutube } from "react-icons/fa";
-import { IoMdArrowForward } from "react-icons/io";
+import { FaInstagram, FaPhoneAlt, FaYoutube } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLocationSharp } from 'react-icons/io5';
 import { MdOutlineMailOutline } from 'react-icons/md';

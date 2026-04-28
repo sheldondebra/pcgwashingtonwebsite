@@ -1,5 +1,4 @@
 import Hero from '../components/Hero'
-import React from 'react'
 import SubHero from '../components/SubHero'
 import VisionCard from '../components/VisionCard'
 import AboutSide from '../components/AboutSide'

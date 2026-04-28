@@ -1,4 +1,3 @@
-import React from "react";
 import ExecutiveCard from "./ExecutiveCard";
 
 const GroupTemplate = ({ title, subtitle, description, executives, logo }) => {

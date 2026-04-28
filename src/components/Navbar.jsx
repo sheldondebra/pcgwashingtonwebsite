@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { MdOutlineAttachMoney } from "react-icons/md";
 import { NavLink } from "react-router";
 

@@ -1,5 +1,3 @@
-import React from 'react'
-import { FiClock, FiMapPin, FiCalendar } from "react-icons/fi";
 import EventCard from '../components/EventCard';
 import SEO from '../components/ui/SEO';
 

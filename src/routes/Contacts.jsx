@@ -1,4 +1,3 @@
-import React from 'react'
 import { IoLocationSharp } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";

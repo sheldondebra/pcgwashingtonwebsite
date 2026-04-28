@@ -1,4 +1,3 @@
-import React from "react";
 import ExecutiveCard from "../components/ExecutiveCard";
 
 const WomensFellowship = () => {

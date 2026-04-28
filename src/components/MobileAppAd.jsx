@@ -1,6 +1,3 @@
-import React from "react";
-import { FaGooglePlay } from "react-icons/fa";
-
 const MobileAppAd = () => {
   return (
     <div className="bg-red-800 px-6 md:px-10 py-16 md:py-22 text-center text-white ">

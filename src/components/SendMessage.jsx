@@ -1,5 +1,5 @@
 import { addDoc, collection } from "firebase/firestore";
-import React, { useState } from "react";
+import { useState } from "react";
 import { BsFillSendFill } from "react-icons/bs";
 import { db } from "../utils/firebase";
 

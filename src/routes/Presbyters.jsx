@@ -1,4 +1,3 @@
-import React from 'react'
 import GroupTemplate from '../components/GroupTemplate';
 
 const Presbyters = () => {

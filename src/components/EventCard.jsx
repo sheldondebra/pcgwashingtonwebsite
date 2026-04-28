@@ -1,4 +1,3 @@
-import React from "react";
 import { FiClock, FiMapPin, FiCalendar, FiPlus } from "react-icons/fi";
 
 const EventCard = ({ event }) => {

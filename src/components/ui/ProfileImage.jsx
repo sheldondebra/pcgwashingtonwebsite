@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import { getProfileImage, DEFAULT_PROFILE_IMAGE } from "../../utils/imageUtils";
 
 /**
@@ -6,25 +5,22 @@ import { getProfileImage, DEFAULT_PROFILE_IMAGE } from "../../utils/imageUtils";
  * Handles both missing URLs and load failures.
  */
 const ProfileImage = ({ src, alt, className, ...props }) => {
-  const [imgSrc, setImgSrc] = useState(getProfileImage(src));
-
-  // Update internal state if the src prop changes
-  useEffect(() => {
-    setImgSrc(getProfileImage(src));
-  }, [src]);
-
   const handleError = () => {
-    if (imgSrc !== DEFAULT_PROFILE_IMAGE) {
-      setImgSrc(DEFAULT_PROFILE_IMAGE);
+    if (props.onError) {
+      props.onError();
     }
   };
 
   return (
     <img
-      src={imgSrc}
+      src={getProfileImage(src)}
       alt={alt || "Profile Image"}
       className={className}
-      onError={handleError}
+      onError={(event) => {
+        event.currentTarget.onerror = null;
+        event.currentTarget.src = DEFAULT_PROFILE_IMAGE;
+        handleError();
+      }}
       {...props}
     />
   );
