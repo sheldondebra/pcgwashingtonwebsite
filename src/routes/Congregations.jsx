@@ -102,7 +102,7 @@ const Congregations = () => {
                 {/* Actions */}
                 <div className="flex items-center justify-between">
                   {item.website ? (
-                    <a href={item.link} target='_blank'>
+                    <a href={item.link} target="_blank" rel="noreferrer">
                       <Button size="sm" className="w-full bg-red-800">
                         Visit Website
                       </Button>

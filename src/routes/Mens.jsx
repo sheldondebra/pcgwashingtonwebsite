@@ -6,7 +6,7 @@ const Mens = () => {
      {
        name: "Mr. Bill Ampofo",
        role: "President",
-       image: "./assets/bill.jpeg",
+       image: "/assets/bill.jpeg",
      },
      {
        name: "Mr. Samuel Ntim",

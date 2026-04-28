@@ -6,49 +6,49 @@ const WomensFellowship = () => {
       id: 1,
       name: "Mrs. Doris Nsiah",
       role: "President",
-      image: "./assets/dorisn.jpg",
+      image: "/assets/dorisn.jpg",
     },
     {
       id: 2,
       name: "Mrs. Augustina Ralph Laryea",
       role: "Vice President",
-      image: "./assets/augustinal.jpg",
+      image: "/assets/augustinal.jpg",
     },
     {
       id: 3,
       name: "Mrs. Barbara Sosoo",
       role: "Secretary",
-      image: "./assets/barbaras.jpg",
+      image: "/assets/barbaras.jpg",
     },
     {
       id: 4,
       name: "Mrs. Anita Frimpong",
       role: "Vice Secretary",
-      image: "./assets/anitaf.jpg",
+      image: "/assets/anitaf.jpg",
     },
     {
       id: 5,
       name: "Ms. Comfort Opare-Ababio",
       role: "Chaplain",
-      image: "./assets/comforto.jpg",
+      image: "/assets/comforto.jpg",
     },
     {
       id: 6,
       name: "Mrs. Lucy Asiamah",
       role: "Treasurer",
-      image: "./assets/lucya.jpg",
+      image: "/assets/lucya.jpg",
     },
     {
       id: 7,
       name: "Mrs. Doris Afari-Mintah",
       role: "Financial Secretary",
-      image: "./assets/dorisa.jpg",
+      image: "/assets/dorisa.jpg",
     },
     {
       id: 8,
       name: "Mrs. Akweley Nanka-Bruce",
       role: "Protocol",
-      image: "./assets/akweleyb.jpg",
+      image: "/assets/akweleyb.jpg",
     },
   ];
 
@@ -67,7 +67,7 @@ const WomensFellowship = () => {
           <div className=" md:w-1/2 ">
             <div className="flex gap-8">
               <img
-                src="./assets/womenslogo.jpg"
+                src="/assets/womenslogo.jpg"
                 alt="womenslogo"
                 className="w-20 h-20 "
               />

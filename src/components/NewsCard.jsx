@@ -59,10 +59,10 @@ const NewsCard = () => {
               />
               <h1 className="text-2xl font-semibold mb-2">{news.title}</h1>
               <p className="text-gray-500">{news.description}</p>
-              <button className="text-red-700 flex items-center gap-6 my-5">
+              <div className="my-5 flex items-center gap-6 text-red-700">
                 <FaArrowRight />
                 Read More
-              </button>
+              </div>
               <hr />
               <div className="flex gap-5 items-center text-gray-600 mt-4 text-sm">
                 <LuCalendar />

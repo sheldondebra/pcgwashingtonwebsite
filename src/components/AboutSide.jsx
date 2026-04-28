@@ -5,7 +5,8 @@ const AboutSide = () => {
     <div className="flex flex-col md:flex-row items-center">
       <div className="w-full md:w-1/2">
         <img
-          src="./assets/aboutside.jpg"
+          src="/assets/aboutside.jpg"
+          alt="Members of the Presbyterian Church of Ghana Washington DC North District"
           className="w-full h-72 md:h-[600px] object-cover"
         />
       </div>
@@ -26,10 +27,11 @@ const AboutSide = () => {
           strive to make a lasting impact both locally and globally as one body
           in Christ.
         </p>
-        <Link to="/aboutus">
-          <button className="bg-red-700 mt-5 px-6 py-2 rounded-3xl text-white">
-            About Us
-          </button>
+        <Link
+          to="/aboutus"
+          className="mt-5 inline-flex rounded-3xl bg-red-700 px-6 py-2 text-white"
+        >
+          About Us
         </Link>
       </div>
     </div>

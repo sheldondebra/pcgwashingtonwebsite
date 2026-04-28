@@ -16,8 +16,8 @@ const MobileAppAd = () => {
 
         <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
           {/* Apple */}
-          <a
-            href="#"
+          <button
+            type="button"
             className="w-full border rounded-full  sm:w-auto bg-dark hover:bg-dark-strong focus:ring-4 focus:outline-none focus:ring-neutral-quaternary text-white rounded-base inline-flex items-center justify-center px-4 py-3"
           >
             <svg
@@ -38,11 +38,11 @@ const MobileAppAd = () => {
               <div className="text-xs">Download on the</div>
               <div className="text-sm font-bold">Mac App Store</div>
             </div>
-          </a>
+          </button>
 
           {/* Google Play */}
-          <a
-            href="#"
+          <button
+            type="button"
             className="w-full sm:w-auto bg-dark  border rounded-full   hover:bg-dark-strong focus:ring-4 focus:outline-none focus:ring-neutral-quaternary text-white rounded-base inline-flex items-center justify-center px-4 py-3"
           >
             <svg
@@ -63,7 +63,7 @@ const MobileAppAd = () => {
               <div className="text-xs">Get it on</div>
               <div className="text-sm font-bold">Google Play</div>
             </div>
-          </a>
+          </button>
         </div>
       </div>
     </div>

@@ -2,11 +2,11 @@ import GroupTemplate from "../components/GroupTemplate";
 
 const Choir = () => {
 const executives = [
-  { name: "Jonathan Liggie", role: "President", image: "/img/female.jpg" },
+  { name: "Jonathan Liggie", role: "President", image: "/img/placeholder-profile.jpg" },
   {
     name: "Eugenia Aniagyei",
     role: "Vice President",
-    image: "/img/female.jpg",
+    image: "/img/placeholder-profile.jpg",
   },
   {
     name: "Linda Oppong Boateng",
@@ -16,7 +16,7 @@ const executives = [
   {
     name: "Pricilla Baidoo",
     role: "Assistant Secretary",
-    image: "/img/female.jpg",
+    image: "/img/placeholder-profile.jpg",
   },
   {
     name: "Sam Teye",
@@ -33,27 +33,27 @@ const executives = [
   {
     name: "Gifty Ampofo",
     role: "Organiser",
-    image: "/img/female.jpg",
+    image: "/img/placeholder-profile.jpg",
   },
   {
     name: "Daniel Laryea",
     role: "Assistant Organiser",
-    image: "/img/default.jpg",
+    image: "/img/placeholder-profile.jpg",
   },
   {
     name: "Juliet Owusu",
     role: "Treasurer",
-    image: "/img/female.jpg",
+    image: "/img/placeholder-profile.jpg",
   },
   {
     name: "Dorothy Afari Mintah",
     role: "Financial Secretary",
-    image: "/img/female.jpg",
+    image: "/img/placeholder-profile.jpg",
   },
   {
     name: "Alexander Ampadu",
     role: "Chaplain",
-    image: "/img/default.jpg",
+    image: "/img/placeholder-profile.jpg",
   },
 
 

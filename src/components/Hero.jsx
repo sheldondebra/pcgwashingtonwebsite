@@ -52,7 +52,7 @@ const Hero = () => {
               <div className="w-full">
                 <Card className="rounded-none border-none">
                   <CardContent
-                    className="relative flex items-center justify-center h-[80vh] p-6 bg-cover bg-center"
+                    className="relative flex h-[72vh] items-center justify-center bg-cover bg-center p-6 md:h-[80vh]"
                     style={{ backgroundImage: `url(${slides.image})` }}
                   >
                     {/* Overlay */}
@@ -67,10 +67,11 @@ const Hero = () => {
                       <p className="text-base md:text-xl mb-6 text-gray-200 leading-relaxed max-w-2xl mx-auto">
                         {slides.description}
                       </p>
-                      <Link to={slides.link}>
-                        <button className="bg-red-800 hover:bg-red-500 text-white px-8 py-3 rounded-lg font-semibold transition shadow-lg">
-                          {slides.cta}
-                        </button>
+                      <Link
+                        to={slides.link}
+                        className="inline-flex rounded-lg bg-red-800 px-8 py-3 font-semibold text-white shadow-lg transition hover:bg-red-500"
+                      >
+                        {slides.cta}
                       </Link>
                     </div>
                   </CardContent>

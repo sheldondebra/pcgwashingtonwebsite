@@ -6,7 +6,7 @@ const YPG = () => {
    {
      name: "Ms. Margaret Quashie",
      role: "President",
-     image: "/img/groups/default.jpg",
+     image: "/img/placeholder-profile.jpg",
    },
    {
      name: "Abigail Mensah",

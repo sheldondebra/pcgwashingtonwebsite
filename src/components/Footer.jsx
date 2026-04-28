@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="bg-linear-to-r from-blue-800 to-blue-500 px-6 md:px-14 py-12 md:py-18">
       <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-23">
         <div className="flex flex-col items-start">
-          <img src="/assets/pcgfooterlogo.png" className="w-53" />
+          <img src="/assets/pcgfooterlogo.png" alt="Presbyterian Church of Ghana Washington DC North District footer logo" className="w-53" />
           <p className="text-white mt-4 text-sm leading-relaxed max-w-xs">
             Presbyterian Church of Ghana – Washington DC North District is a
             united body of congregations committed to Christ-centered worship,

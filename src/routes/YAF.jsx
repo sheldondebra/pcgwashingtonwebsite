@@ -6,32 +6,32 @@ const YAF = () => {
     {
       name: "Dr. Paa Kwasi Sefa",
       role: "President",
-      image: "/img/groups/default.jpg",
+      image: "/img/placeholder-profile.jpg",
     },
     {
       name: "Ms. TBD",
       role: "Vice President",
-      image: "/img/groups/default.jpg",
+      image: "/img/placeholder-profile.jpg",
     },
     {
       name: "Mrs. Emefa Sappor",
       role: "Secretary",
-      image: "/img/groups/default.jpg",
+      image: "/img/placeholder-profile.jpg",
     },
     {
       name: "Mr. Joseph Yeboah",
       role: "Organiser",
-      image: "/img/groups/default.jpg",
+      image: "/img/placeholder-profile.jpg",
     },
     {
       name: "Ms. Evelyn Addison",
       role: "Treasurer",
-      image: "/img/groups/default.jpg",
+      image: "/img/placeholder-profile.jpg",
     },
     {
       name: "Ms. Afia Dadzie",
       role: "Financial Secretary",
-      image: "/img/groups/default.jpg",
+      image: "/img/placeholder-profile.jpg",
     },
   ];
   return (

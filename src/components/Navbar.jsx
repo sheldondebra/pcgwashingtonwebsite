@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MdOutlineAttachMoney } from "react-icons/md";
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 
 import { HiOutlineBars4 } from "react-icons/hi2";
+import { X } from "lucide-react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { Link } from "react-router";
 
@@ -10,6 +11,7 @@ import { Link } from "react-router";
 const Navbar = () => {
   const [mobMenu, setMobMenu] = useState(false);
   const [openGroups, setOpenGroups] = useState(false);
+  const location = useLocation();
 
  const groups = [
    {
@@ -45,12 +47,26 @@ const Navbar = () => {
      link: "/presbyters",
    },
  ];
+
+  useEffect(() => {
+    setMobMenu(false);
+    setOpenGroups(false);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = mobMenu ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobMenu]);
+
   return (
     <div className="bg-white shadow py-1 w-full z-50 flex items-center">
       <div className="flex mx-auto container justify-between items-center px-6 w-full">
         {/* Logo */}
-        <Link to="/">
-          <img src="/assets/logo.png" className="w-40" />
+        <Link to="/" aria-label="Presbyterian Church of Ghana Washington DC North District home">
+          <img src="/assets/logo.png" alt="Presbyterian Church of Ghana Washington DC North District" className="w-32 md:w-40" />
         </Link>
 
         {/* Desktop Menu */}
@@ -165,18 +181,24 @@ const Navbar = () => {
         </div>
 
         {/* Give Button */}
-        <Link to="/give">
-          <button className="md:flex items-center bg-red-600 text-white py-2 px-6 gap-2 rounded-full hidden">
+        <Link
+          to="/give"
+          className="hidden items-center gap-2 rounded-full bg-red-600 px-6 py-2 text-white md:flex"
+        >
             <MdOutlineAttachMoney />
             Give
-          </button>
         </Link>
 
         {/* Mobile Menu Icon */}
-        <HiOutlineBars4
+        <button
+          type="button"
           onClick={() => setMobMenu(!mobMenu)}
-          className="h-10 w-10 md:hidden cursor-pointer"
-        />
+          className="rounded-md p-2 md:hidden"
+          aria-expanded={mobMenu}
+          aria-label={mobMenu ? "Close navigation menu" : "Open navigation menu"}
+        >
+          <HiOutlineBars4 className="h-10 w-10 cursor-pointer" />
+        </button>
 
         {/* Mobile Sidebar */}
         <div
@@ -184,10 +206,25 @@ const Navbar = () => {
             mobMenu ? "translate-x-0" : "-translate-x-full"
           }`}
         >
-          <div className="p-8">
-            <Link to="/" onClick={() => setMobMenu(false)}>
-              <img src="/assets/logo.png" className="w-40 mb-5" />
+          <div className="flex items-center justify-between border-b border-gray-100 p-6">
+            <Link to="/">
+              <img
+                src="/assets/logo.png"
+                alt="Presbyterian Church of Ghana Washington DC North District"
+                className="w-32"
+              />
             </Link>
+            <button
+              type="button"
+              onClick={() => setMobMenu(false)}
+              className="rounded-full border border-gray-200 p-2 text-gray-600"
+              aria-label="Close navigation menu"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+
+          <div className="p-6">
 
             <div className="flex flex-col gap-3">
               <NavLink
@@ -278,6 +315,15 @@ const Navbar = () => {
                 }
               >
                 Events
+              </NavLink>
+              <NavLink
+                to="/news"
+                onClick={() => setMobMenu(false)}
+                className={({ isActive }) =>
+                  `block px-3 py-2 rounded transition ${isActive ? "bg-red-100 text-red-800 font-semibold" : "hover:bg-gray-100"}`
+                }
+              >
+                News
               </NavLink>
               <NavLink
                 to="/contactus"

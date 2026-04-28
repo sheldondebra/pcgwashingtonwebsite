@@ -19,6 +19,8 @@ import Mens from "./routes/Mens";
 import YAF from "./routes/YAF";
 import BlogDetails from "./routes/BlogDetails";
 import News from "./routes/News";
+import Groups from "./routes/Groups";
+import BibleStudy from "./routes/BibleStudy";
 
 const App = () => {
   return (
@@ -40,6 +42,8 @@ const App = () => {
         <Route path="/singingband" element={<SingingBand />} />
         <Route path="/mensfellowship" element={<Mens/>}/>
         <Route path="/yaf" element={<YAF/>}/>
+        <Route path="/groups" element={<Groups />} />
+        <Route path="/biblestudy" element={<BibleStudy />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/blog/:id" element={<BlogDetails/>}/>
         <Route path="/news" element={<News/>}/>

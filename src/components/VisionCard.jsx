@@ -6,19 +6,19 @@ const VisionCard = () => {
       title: "Our Vision",
       description:
         "To be a Christ-centered, self-sustaining, and growing district that nurtures faith, unity, and strong leadership across all congregations.",
-      image: "./assets/vision.jpeg",
+      image: "/assets/vision.jpeg",
     },
     {
       title: "Our Mission",
       description:
         "To uphold the Word of God through prayer, evangelism, and holistic ministry while promoting growth, service, and community development.",
-      image: "./assets/Mission.jpeg",
+      image: "/assets/Mission.jpeg",
     },
     {
       title: "Our Motto",
       description:
         "Binding all together and expressing the essential unity of the Presbyterian Church of Ghana; is the motto “THAT THEY ALL MAY BE ONE”. (John 17:21).",
-      image: "./assets/Motto.jpeg",
+      image: "/assets/Motto.jpeg",
     },
   ];
 

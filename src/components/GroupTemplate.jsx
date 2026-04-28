@@ -4,19 +4,18 @@ const GroupTemplate = ({ title, subtitle, description, executives, logo }) => {
   return (
     <div>
       {/* HERO */}
-   
-      <section className="text-center md:h-52 h-30 w-full bg-linear-to-r from-blue-800 to-red-700 flex flex-col justify-center">
-        <h1 className="text-white text-4xl font-bold">{title}</h1>
-        <p className="text-gray-300 text-sm mt-3">{subtitle}</p> "
-  
+
+      <section className="flex w-full flex-col justify-center bg-linear-to-r from-blue-800 to-red-700 px-6 py-12 text-center md:h-52">
+        <h1 className="text-3xl font-bold text-white md:text-4xl">{title}</h1>
+        <p className="mt-3 text-sm text-gray-300">{subtitle}</p>
       </section>
 
       {/* ABOUT */}
       {description && (
-        <div className="bg-red-50 w-full py-20 px-10">
-          <section className="mx-auto container flex gap-10 flex-col md:flex-row">
-            {logo && <img src={logo} alt="logo" className="w-24 h-24" />}
-            <p className="text-gray-600 text-center">{description}</p>
+        <div className="w-full bg-red-50 px-6 py-16 md:px-10 md:py-20">
+          <section className="container mx-auto flex flex-col gap-8 md:flex-row md:items-start md:gap-10">
+            {logo && <img src={logo} alt={`${title} logo`} className="h-24 w-24 shrink-0" />}
+            <p className="text-center leading-8 text-gray-600 md:text-left">{description}</p>
           </section>
         </div>
       )}
