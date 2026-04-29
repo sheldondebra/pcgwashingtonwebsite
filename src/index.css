@@ -156,3 +156,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #4f46e5, #2563eb);
 }
+
+
+body::selection {
+  background: #ffe5e5a7;
+  color: rgb(62, 62, 62);
+}
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+
+}
