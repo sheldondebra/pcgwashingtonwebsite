@@ -76,7 +76,7 @@ console.log("api");
     </p>
 
     <div style="margin-top:20px; font-size:12px; color:#6b7280;">
-      PUC Washington DC
+      PCG Washington DC - North
     </div>
 
   </div>
@@ -95,7 +95,7 @@ console.log("api");
     </p>
 
     <div style="margin-top:20px; font-size:12px; color:#6b7280;">
-      PUC Washington DC
+      PCG Washington DC - North
     </div>
 
   </div>
@@ -106,7 +106,7 @@ console.log("api");
 
     // Send Confirmation to User
     await transporter.sendMail({
-      from: `"PUC Washington DC" <${process.env.SMTP_USER}>`,
+      from: `"PCG Washington DC North" <${process.env.SMTP_USER}>`,
       to: email,
       subject: "We received your message",
       html: userHTML,

@@ -138,10 +138,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto mt-12 pt-8 border-t border-blue-400/30 text-center md:text-left">
-        <p className="text-xs text-blue-100">
+      <div className="container mx-auto mt-12 pt-8 border-t border-blue-400/30 text-center md:text-left md:flex  justify-between">
+        <p className="text-xs text-blue-100 mb-4 md:mb-0">
           © 2026 Presbyterian Church of Ghana – Washington DC North District.
           All Rights Reserved.
+        </p>
+        <p className="text-xs text-blue-100 gap-4">
+          Developed by &nbsp;
+          <a href="https://tecunitgh.com/usa" target='blank' className='font-bold uppercase hover:font-extralight'>Tecunit.</a>
         </p>
       </div>
     </div>

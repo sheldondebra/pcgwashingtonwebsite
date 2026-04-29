@@ -7,21 +7,21 @@ const Congregations = () => {
    const congregations = [
      {
        name: "Adom Congregation",
-       logo: "PCG Adom Logo",
+       logo: null,
        minister: "Rev. Felix Addo Botchway",
        website: true,
        link: "https://pcgadom.org/",
      },
      {
        name: "Capital DC Preaching Point",
-       logo: "PCG Capital DC Logo",
+       logo: null,
        minister: "Rev. Dr. Michael Obiri-Yeboah",
        website: true,
        link: "https://pcgcapitaldc.com/",
      },
      {
        name: "Covenant Congregation",
-       logo: "PCG Covenant Logo",
+       logo: null,
        minister: "Rev. Theophilus Odonkor",
        website: true,
        link: "https://pcgccde.com/",
@@ -42,14 +42,14 @@ const Congregations = () => {
      },
      {
        name: "Good Shepherd Preaching Point",
-       logo: "PCG Good Shepherd Logo",
+       logo: null,
        minister: "Mad. Comfort Opare-Ababio",
        website: true,
        link: "https://pcgigoodshepherd.org/",
      },
      {
        name: "Trinity Congregation",
-       logo: "PCG Trinity Logo",
+       logo: null,
        minister: "Rev. Dr. Ernestina J. Gakpo",
        website: true,
        link: "https://pcgtrinity.org/",
@@ -104,6 +104,7 @@ const Congregations = () => {
                   {item.website ? (
                     <a href={item.link} target="_blank" rel="noreferrer">
                       <Button size="sm" className="w-full bg-red-800">
+                        
                         Visit Website
                       </Button>
                     </a>

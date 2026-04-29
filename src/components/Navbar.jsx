@@ -65,8 +65,15 @@ const Navbar = () => {
     <div className="bg-white shadow py-1 w-full z-50 flex items-center">
       <div className="flex mx-auto container justify-between items-center px-6 w-full">
         {/* Logo */}
-        <Link to="/" aria-label="Presbyterian Church of Ghana Washington DC North District home">
-          <img src="/assets/logo.png" alt="Presbyterian Church of Ghana Washington DC North District" className="w-32 md:w-40" />
+        <Link
+          to="/"
+          aria-label="Presbyterian Church of Ghana Washington DC North District home"
+        >
+          <img
+            src="/assets/logo.png"
+            alt="Presbyterian Church of Ghana Washington DC North District"
+            className="w-32 md:w-40"
+          />
         </Link>
 
         {/* Desktop Menu */}
@@ -104,9 +111,18 @@ const Navbar = () => {
 
           {/* Desktop Dropdown (Hover) */}
           <div className="relative group py-3">
-            <Link to='/groups' className="flex items-center gap-1 cursor-pointer">
-              <span>Groups</span>
-              <IoIosArrowDown className="text-xs" />
+            <Link
+              to="/groups"
+              className={({ isActive }) =>
+                `block px-3 py-2 rounded transition ${
+                  isActive ? "bg-red-200 font-semibold" : "hover:bg-red-100"
+                }`
+              }
+            >
+              <div className="flex items-center gap-1 cursor-pointer">
+                <span>Groups</span>
+                <IoIosArrowDown className="text-xs" />
+              </div>
             </Link>
 
             <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-md  p-2 hidden group-hover:block w-56">
@@ -185,8 +201,8 @@ const Navbar = () => {
           to="/give"
           className="hidden items-center gap-2 rounded-full bg-red-600 px-6 py-2 text-white md:flex"
         >
-            <MdOutlineAttachMoney />
-            Give
+          <MdOutlineAttachMoney />
+          Give
         </Link>
 
         {/* Mobile Menu Icon */}
@@ -195,7 +211,9 @@ const Navbar = () => {
           onClick={() => setMobMenu(!mobMenu)}
           className="rounded-md p-2 md:hidden"
           aria-expanded={mobMenu}
-          aria-label={mobMenu ? "Close navigation menu" : "Open navigation menu"}
+          aria-label={
+            mobMenu ? "Close navigation menu" : "Open navigation menu"
+          }
         >
           <HiOutlineBars4 className="h-10 w-10 cursor-pointer" />
         </button>
@@ -225,7 +243,6 @@ const Navbar = () => {
           </div>
 
           <div className="p-6">
-
             <div className="flex flex-col gap-3">
               <NavLink
                 to="/"
