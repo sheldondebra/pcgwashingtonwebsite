@@ -104,10 +104,10 @@ const Navbar = () => {
 
           {/* Desktop Dropdown (Hover) */}
           <div className="relative group py-3">
-            <div className="flex items-center gap-1 cursor-pointer">
+            <Link to='/groups' className="flex items-center gap-1 cursor-pointer">
               <span>Groups</span>
               <IoIosArrowDown className="text-xs" />
-            </div>
+            </Link>
 
             <div className="absolute top-full left-0 mt-0 bg-white shadow-lg rounded-md  p-2 hidden group-hover:block w-56">
               {groups.map((item, index) => (
