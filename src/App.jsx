@@ -28,6 +28,7 @@ const App = () => {
     <>
       <Navbar />
       <ToastContainer position="top-left" autoClose={3000} />
+      <Routes>
         <Route path="/" index element={<Home />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/committees" element={<Committees />} />
@@ -48,7 +49,6 @@ const App = () => {
         <Route path="*" element={<NotFound />} />
         <Route path="/blog/:slug" element={<BlogDetails/>}/>
         <Route path="/news" element={<News/>}/>
-
       </Routes>
       <Footer />
     </>
