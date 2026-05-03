@@ -21,12 +21,13 @@ import BlogDetails from "./routes/BlogDetails";
 import News from "./routes/News";
 import Groups from "./routes/Groups";
 import BibleStudy from "./routes/BibleStudy";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Routes>
+      <ToastContainer position="top-left" autoClose={3000} />
         <Route path="/" index element={<Home />} />
         <Route path="/aboutus" element={<About />} />
         <Route path="/committees" element={<Committees />} />
@@ -45,7 +46,7 @@ const App = () => {
         <Route path="/groups" element={<Groups />} />
         <Route path="/biblestudy" element={<BibleStudy />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/blog/:id" element={<BlogDetails/>}/>
+        <Route path="/blog/:slug" element={<BlogDetails/>}/>
         <Route path="/news" element={<News/>}/>
 
       </Routes>

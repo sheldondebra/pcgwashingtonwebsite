@@ -8,8 +8,9 @@ const NewsCard = () => {
 
   const newsData = [
     {
-      id:1,
+      id: 1,
       title: "District Thanksgiving Service Held Successfully",
+      slug: "district-thanksgiving-service",
       image: "/assets/womanaward.jpg",
       description:
         "The Washington DC North District gathered in unity for a powerful thanksgiving service filled with praise, prayer, and fellowship.",
@@ -18,6 +19,7 @@ const NewsCard = () => {
     {
       id: 2,
       title: "Youth Ministry Retreat 2026",
+      slug: "youth-ministry-retreat-2026",
       image: "/assets/pastormember.jpg",
       description:
         "The district youth experienced a spirit-filled retreat focused on discipleship, leadership, and spiritual growth.",
@@ -26,14 +28,16 @@ const NewsCard = () => {
     {
       id: 3,
       title: "New Preaching Point Inaugurated",
+      slug: "new-preaching-point-inaugrated",
       image: "/assets/bluwwoman.jpg",
       description:
         "A new preaching point was officially inaugurated, expanding the mission work of the district.",
       date: "January 25, 2026",
     },
     {
-      id:4,
+      id: 4,
       title: "Children Service",
+      slug: "children-service",
       image:
         "https://img.freepik.com/free-photo/church-congregation-praying-together_1150-18580.jpg",
       description:
@@ -47,7 +51,7 @@ const NewsCard = () => {
     <div>
       <div className="grid md:grid-cols-4 gap-5">
         {newsData.map((news) => (
-          <Link key={news.id} to={`/blog/${news.id}`}>
+          <Link key={news.id} to={`/blog/${news.slug}`}>
             <div
             
               className="bg-amber-50 p-8 rounded-4xl shadow flex flex-col justify-between"

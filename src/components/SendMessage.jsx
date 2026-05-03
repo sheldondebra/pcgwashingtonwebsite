@@ -2,6 +2,7 @@ import { addDoc, collection } from "firebase/firestore";
 import { useState } from "react";
 import { BsFillSendFill } from "react-icons/bs";
 import { db } from "../utils/firebase";
+import { toast } from "react-toastify";
 
 const SendMessage = ({title, btnLabel, type}) => {
 
@@ -59,6 +60,7 @@ const handleSubmit = async (e) =>{
 
     if(data.success){
       setSucess('Message sent Successfully')
+      toast('Message sent Successfully')
 
       setForm({
         name: '',
@@ -69,11 +71,13 @@ const handleSubmit = async (e) =>{
 
     }else{
       setError('Failed to send Message')
+      toast('Failed to Send Message')
     }
 
   }catch(err){
     setError(err.message)
     console.log(err.message)
+    toast(`Sending Message Unsuccessful ${err.message}`)
   }finally{
     setLoading(false)
   }
